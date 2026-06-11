@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>netsectom — blue team notes from the field</title>
+  <meta name="description" content="Detection engineering, Microsoft Sentinel, KQL, identity security, and CTF writeups. Blue team notes from a working security engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="logo" href="/"><span class="prompt">&gt;_</span> netsectom</a>
+      <ul class="nav-links">
+        <li><a href="/">posts</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="https://github.com/netsectom">github</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Blue team notes<br>from the field.</h1>
+    <p class="tagline">
+      Detection engineering, Microsoft Sentinel, KQL, identity security, and the
+      occasional CTF writeup — documented the way I wish someone had documented
+      it for me.
+    </p>
+
+    <div class="query-block" aria-label="Decorative KQL query">
+<span class="cmt">// every post on this site, as a query</span><br>
+<span class="tbl">BlueTeamNotes</span><br>
+<span class="kw">| where</span> Author <span class="kw">==</span> <span class="str">"netsectom"</span><br>
+<span class="kw">| where</span> Quality <span class="kw">==</span> <span class="str">"would actually use this at work"</span><br>
+<span class="kw">| order by</span> TimeGenerated <span class="kw">desc</span>
+    </div>
+  </header>
+
+  <main class="results">
+    <div class="results-meta">RESULTS — 1 record</div>
+    <div class="result-table">
+
+      <a class="result-row" href="posts/detecting-mfa-fatigue-sentinel.html">
+        <span class="ts">2026-06-11</span>
+        <span class="sev sev-detection">DETECTION</span>
+        <span class="title">Detecting MFA Fatigue Attacks in Microsoft Sentinel</span>
+        <span class="summary">Building a KQL detection for push-bombing: the signal, the noise, the thresholds I chose, and why.</span>
+      </a>
+
+      <!-- TEMPLATE — copy this block for each new post
+      <a class="result-row" href="posts/YOUR-POST-SLUG.html">
+        <span class="ts">YYYY-MM-DD</span>
+        <span class="sev sev-identity">IDENTITY</span>   sev options: sev-detection, sev-identity, sev-lab, sev-ctf
+        <span class="title">Your Post Title</span>
+        <span class="summary">One sentence on what the reader gets.</span>
+      </a>
+      -->
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>netsectom · blue team notes · DFW</span>
+      <span><a href="https://github.com/netsectom">github.com/netsectom</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
